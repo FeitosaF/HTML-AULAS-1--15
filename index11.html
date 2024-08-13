@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+    <Style>
+        body{
+            font-family: sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 150%;
+        }
+        table td, table th{
+           border: 1px solid #ccc; 
+           padding: 5px;
+           text-align: left;
+        }
+        table caption{
+            caption-side: top;
+            text-align: left;
+            font-style: italic;
+            font-size: 14px;
+        }
+        tfoot td, table th{
+          background: #ddd;  
+        }
+        .responsive-table{
+            max-width: 100%;;
+           overflow-x: auto; 
+        }
+    </Style>
+</head>
+<body>
+    <p> Texto é uma manifestação de liguagens</p>
+    <div class="responsive-table">
+ <table>
+    <caption>Descrição da tabela</caption>
+    <thead>
+        <tr>
+            <th>Título 1</th>
+            <th>Título 2</th>
+            <th>Título 3</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+          <td> Corpo 1</td>  
+          <td> Corpo 2</td>  
+          <td> Corpo 3</td>  
+        </tr>
+        <tr>
+            <td colspan="2"> Corpo 1</td>   
+            <td> Corpo 3</td>  
+          </tr>
+          <tr>
+            <td> Corpo 1</td>  
+            <td> Corpo 2</td>  
+            <td> Corpo 3</td>  
+          </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="2"></td>
+        <td rowspan="2">Total: R$555</td>
+      </tr>  
+    </tfoot>
+    <tfoot>
+        <tr>
+        </tr>  
+      </tfoot>
+ </table>
+</div>
+</body>
+</html>
